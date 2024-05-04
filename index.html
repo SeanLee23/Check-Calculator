@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Split Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Check Split Calculator</h1>
+            <ul>
+                <li><a href="index.html" id="evenSplit">Even Split</a></li>
+                <li><a href="Itemized.html" id="itemizedSplit">Itemized Split</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="body-container">
+        <div class="container">
+            <h2>Even Split</h2>
+            <div class="input-container">
+                <label for="total">Sub Total Amount ($):</label>
+                <input type="number" id="total">
+            </div>
+            <div class="input-container">
+                <label for="tax">Tax Rate (%):</label>
+                <input type="number" id="tax">
+            </div>
+            <div class="input-container">
+                <label for="tip">Tip Amount ($):</label>
+                <input type="number" id="tip">
+            </div>
+            <div class="input-container">
+                <label for="people">Number of People:</label>
+                <input type="number" id="people">
+            </div>
+            <button onclick="calculateEvenSplit()">Calculate</button>
+            <div id="evenSplitResult"></div>
+            <canvas id="pieChart"></canvas>
+        </div>
+    </div>
+ <footer>
+        <p>Sean's Calculations</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
